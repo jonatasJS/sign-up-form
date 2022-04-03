@@ -26,7 +26,7 @@ main {
 }
 
 main h1 {
-    color: #8880FE;
+    color: #0f8;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -84,6 +84,7 @@ main form {
 main form label {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 main form label span {
@@ -104,20 +105,28 @@ main form input {
     border-radius: 8px;
 }
 
+main form span.eyes {
+    position: absolute;
+    right: 1rem;
+    top: 3.5rem;
+    transition: all .5s linear;
+    cursor: pointer;
+}
+
 main form input[type="submit"] {
     cursor: pointer;
     width: 50%;
     margin-top: 4rem;
     border: none;
     border-radius: 32px;
-    background: #6C63FF;
+    background: #0f8;
     color: white;
     font-size: 1.1rem;
     transition: all .3s ease-in-out;
 }
 
 main form input[type="submit"]:hover {
-    background: #5952d4;
+    background: rgb(0, 184, 98);
 }
 
 section.images {
@@ -138,7 +147,7 @@ section.images .circle {
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, #E8CBC0, #636FA4);
+    background: linear-gradient(45deg, #E8CBC0, #77ffc0);
     clip-path: circle(40% at right 80%);
     z-index: -1;
 }
